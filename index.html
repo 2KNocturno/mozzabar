@@ -10,13 +10,13 @@
         <img src="https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png" alt="Logo">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Concepto</li>
-                <li>Fotos</li>
-                <li>Menú</li>
-                <li>Reservas</li>
-                <li>Blog</li>
-                <li>Contacto</li>
+                <li><a href="https://www.google.com/?hl=es">Home</a></li>
+                <li><a href="https://www.google.com/?hl=es">Concepto</a></li>
+                <li><a href="https://www.google.com/?hl=es">Fotos</a></li>
+                <li><a href="https://www.google.com/?hl=es">Menú</a></li>
+                <li><a href="https://www.google.com/?hl=es">Reservas</a></li>
+                <li><a href="https://www.google.com/?hl=es">Blog</a></li>
+                <li><a href="https://www.google.com/?hl=es">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -131,16 +131,126 @@
         <div>
             <h3>RESERVAS</h3>
         </div>
-        <div class="formulario">
-            <label for="Personas">Indique el numero de personas</label>
-            <select name="personas" id="personas">
-
-            </select>
-
-        </div>
-
+            <div class="numero-personas">
+                <label for="Personas">Indique el numero de personas:</label>
+                <select id="Personas" name="num_personas" required>
+                    <option value="">Seleccione un numero de personas</option>
+                    <option value="1-persona">1 persona</option>
+                    <option value="2-personas">2 personas</option>
+                    <option value="3-personas">3 personas</option>
+                    <option value="4-personas">4 personas</option>
+                </select>
+            </div>
+            <div class="hora">
+                <label for="seleccion-hora">Seleccione una hora:</label>
+                <select id="s-hora" name="horas" required>
+                    <option value="">Seleccione una hora</option>
+                    <option value="14h">14:00</option>
+                    <option value="14-30h">14:30</option>
+                    <option value="15h">15:30</option>
+                    <option value="15-30h">15:30</option>
+                </select>
+            </div>
+            <div class="mesa">
+                <select id="t-mesa" name="tp-mesa" required>
+                    <option value="">Seleccione un tipo de mesa</option>
+                    <option value="mesa1">Mesa para 1 persona</option>
+                    <option value="mesa2">Mesa para 2 personas</option>
+                    <option value="mesa3">Mesa para 3 personas</option>
+                </select>
+            </div>
+            <div class="reservar">
+                <button>Reservar</button>
+            </div>
+            <div class="lista-solicitud">
+                <p>Si no encuentra disponibilidad, apúntese en la lista de espera.</p>
+                <li><button><a href="https://www.google.com/?hl=es">Lista de espera</a></button></li>
+                <li><button><a href="https://www.google.com/?hl=es">Solicitud de grupo</a></button></li>
+            </div>
+            <div class="anuncios">
+                <img src="https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png">
+                <li>
+                    <p>Conde de peñalver 64</p>
+                </li>
+                <li>
+                    <p>28006 - Madrid</p>
+                </li>
+                <li>
+                    <p>Abrimos de lunes a domingo de 07:30 a 01:30</p>
+                </li>
+            </div>
+            <div class="blog-txt">
+                <h3>Blog</h3>
+            </div>
+            <div class="img-blog">
+                <img src="../mozzabar/assets/Img1-blog-mozzabar.png" alt="imagen1">
+                <img src="../mozzabar/assets/img2-blog-mozz.png" alt="imagen2">
+                <img src="../mozzabar/assets/img3-blog-mozz.png" alt="imagen3">
+                <li>
+                    <button>Ver todas las entradas</button>
+                </li>
+            </div>
+            <div class="info">
+                <li><img src="https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png"></li>
+                <div>
+                    <li><h3>VEN CUANDO QUIERAS</h3></li>
+                </div>
+                <div>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/1137px-Google_Maps_Logo_2020.svg.png"></li>
+                    <p>C/Conde de Peñalver 64</p>
+                    <p>28006 - Madrid</p>
+                </div>
+                <div>
+                    <li><img src="https://c8.alamy.com/compes/2c18fph/icono-de-telefono-celular-con-onda-de-telecomunicaciones-de-senal-de-llamada-adecuado-para-la-ilustracion-vectorial-del-uso-de-smartphone-para-comunicar-y-conectar-a-personas-2c18fph.jpg"></li>
+                    <p>910 258 327</p>
+                </div>
+                <div>
+                    <li><img src="https://c8.alamy.com/compes/2jdhbtt/conjunto-de-iconos-de-correo-vector-de-iconos-de-correo-electronico-icono-de-correo-electronico-ilustracion-del-sobre-2jdhbtt.jpg"></li>
+                    <p>hola@mozzabar.es</p>
+                </div>
+            </div>
+            <div class="siguenos">
+                <li><button>FACEBOOK</button></li>
+                <li><button>INSTAGRAM</button></li>
+            </div>
     </div>
-
+    <footer>
+        <div class="enlaces-interes">
+            <h4>ENLACES DE INTERES</h4>
+                <div>
+                    <li><a href="https://www.google.com/?hl=es">Aviso legal</a></li>
+                    <li><a href="https://www.google.com/?hl=es">Cookies</a></li>
+                </div>
+        </div>
+        <div class="horarios">
+            <h4>HORARIOS</h4>
+                <div>
+                    <li>Lunes a domingo</li>
+                    <li>07:30 - 01:30</li>
+                </div>
+        </div>
+        <div class="contacto">
+            <h4>CONTACTO</h4>
+                <div>
+                    <li>C/ Conde de Peñalver 64</li>
+                    <li>28008 - Madrid</li>
+                    <li>910 258 327</li>
+                    <li>hola@mozzabar.es</li>
+                </div>
+        </div>
+        <div class="logos-redes">
+            <li><a href="https://www.google.com/?hl=es">
+                    <img src="https://us.123rf.com/450wm/aiart30/aiart302303/aiart30230311500/201381396-ilustraci%C3%B3n-de-signo-de-libra-icono-negro-sobre-un-fondo-blanco-con-espacio-para-el-texto.jpg?ver=6">
+                </a>
+            </li>
+            <li> <li><a href="https://www.google.com/?hl=es">
+                <img src="https://img.freepik.com/vector-premium/logotipo-redes-sociales-contorno-negro_197792-2416.jpg?size=338&ext=jpg&ga=GA1.1.1803636316.1701302400&semt=ais">
+            </a>
+        </div>
+        <div class="derechos">
+            <p>2017. Todos los derechos reservados</p>
+        </div>
+    </footer>
     </main>
 </body>
 </html>
